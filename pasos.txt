@@ -1,0 +1,6 @@
+Crear Proyecto con ng new.
+Abrir proyecto con vsCode
+Ejecutar proyecto ng serve --o
+Crear componentes y servicios con ng g c y ng g s
+Buscar un tema de bootswatch. (Lux) Usar la CND
+Buscar codigo apra navbar

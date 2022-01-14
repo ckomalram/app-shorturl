@@ -1,0 +1,32 @@
+<div class="alert alert-dismissible alert-danger text-center" *ngIf="mostrarError">
+  <strong>{{textError | uppercase}}</strong>
+</div>
+<div class="container mt-3">
+  <h1 class="display-5 text-center">INGRESE URL A Cortar</h1>
+  <div class="row mt-5">
+    <div class="col-lg-8">
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        placeholder="Ingrese la URL"
+        [(ngModel)]="urlName"
+      />
+    </div>
+    <div class="col-lg-4">
+      <button class="btn btn-lg btn-primary btn-block" type="button" (click)="procesarUrl()">
+        ACEPTAR
+      </button>
+    </div>
+  </div>
+  <div class="row mt-3" *ngIf="urlProcess">
+    <div class="col-lg-8">
+      <input
+        type="text"
+        class="form-control form-control-lg"
+        placeholder="Url Recortada"
+        [(ngModel)]="urlShort"
+      />
+    </div>
+  </div>
+  <app-spinner *ngIf="loading"></app-spinner>
+</div>
